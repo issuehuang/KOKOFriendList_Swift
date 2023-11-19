@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+struct FriendListResponse:Codable {
+    let response:[FriendList]
+}
+
+struct FriendList:Codable{
+    let name:String
+    let status: Int
+    let isTop: String
+    let fid: String
+    let updateDate: String
+}
