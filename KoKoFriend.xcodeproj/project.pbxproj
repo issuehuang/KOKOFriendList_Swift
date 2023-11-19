@@ -16,6 +16,9 @@
 		57623DAB2B0A05B1002B7AFD /* KoKoFriendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57623DAA2B0A05B1002B7AFD /* KoKoFriendTests.swift */; };
 		57623DB52B0A05B1002B7AFD /* KoKoFriendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57623DB42B0A05B1002B7AFD /* KoKoFriendUITests.swift */; };
 		57623DB72B0A05B1002B7AFD /* KoKoFriendUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57623DB62B0A05B1002B7AFD /* KoKoFriendUITestsLaunchTests.swift */; };
+		57623DC52B0A0738002B7AFD /* UserDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57623DC42B0A0738002B7AFD /* UserDataResponse.swift */; };
+		57623DC72B0A07C4002B7AFD /* FriendListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57623DC62B0A07C4002B7AFD /* FriendListResponse.swift */; };
+		57623DC92B0A8DF2002B7AFD /* FriendPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57623DC82B0A8DF2002B7AFD /* FriendPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		57623DB02B0A05B1002B7AFD /* KoKoFriendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoKoFriendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57623DB42B0A05B1002B7AFD /* KoKoFriendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoKoFriendUITests.swift; sourceTree = "<group>"; };
 		57623DB62B0A05B1002B7AFD /* KoKoFriendUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoKoFriendUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		57623DC42B0A0738002B7AFD /* UserDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataResponse.swift; sourceTree = "<group>"; };
+		57623DC62B0A07C4002B7AFD /* FriendListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListResponse.swift; sourceTree = "<group>"; };
+		57623DC82B0A8DF2002B7AFD /* FriendPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		57623D922B0A05B0002B7AFD /* KoKoFriend */ = {
 			isa = PBXGroup;
 			children = (
+				57623DC32B0A06F8002B7AFD /* APIModel */,
 				57623D932B0A05B0002B7AFD /* AppDelegate.swift */,
 				57623D952B0A05B0002B7AFD /* SceneDelegate.swift */,
 				57623D972B0A05B0002B7AFD /* ViewController.swift */,
@@ -106,6 +113,7 @@
 				57623D9C2B0A05B1002B7AFD /* Assets.xcassets */,
 				57623D9E2B0A05B1002B7AFD /* LaunchScreen.storyboard */,
 				57623DA12B0A05B1002B7AFD /* Info.plist */,
+				57623DC82B0A8DF2002B7AFD /* FriendPageViewController.swift */,
 			);
 			path = KoKoFriend;
 			sourceTree = "<group>";
@@ -125,6 +133,15 @@
 				57623DB62B0A05B1002B7AFD /* KoKoFriendUITestsLaunchTests.swift */,
 			);
 			path = KoKoFriendUITests;
+			sourceTree = "<group>";
+		};
+		57623DC32B0A06F8002B7AFD /* APIModel */ = {
+			isa = PBXGroup;
+			children = (
+				57623DC42B0A0738002B7AFD /* UserDataResponse.swift */,
+				57623DC62B0A07C4002B7AFD /* FriendListResponse.swift */,
+			);
+			path = APIModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				57623D982B0A05B0002B7AFD /* ViewController.swift in Sources */,
+				57623DC92B0A8DF2002B7AFD /* FriendPageViewController.swift in Sources */,
+				57623DC72B0A07C4002B7AFD /* FriendListResponse.swift in Sources */,
+				57623DC52B0A0738002B7AFD /* UserDataResponse.swift in Sources */,
 				57623D942B0A05B0002B7AFD /* AppDelegate.swift in Sources */,
 				57623D962B0A05B0002B7AFD /* SceneDelegate.swift in Sources */,
 			);
