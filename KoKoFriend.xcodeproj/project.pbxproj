@@ -28,6 +28,7 @@
 		57A756BE2B0E6E9800AF2534 /* FriendInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57A756BC2B0E6E9800AF2534 /* FriendInfoCell.xib */; };
 		57A756C12B0E845B00AF2534 /* InvitedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A756BF2B0E845B00AF2534 /* InvitedCell.swift */; };
 		57A756C22B0E845B00AF2534 /* InvitedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57A756C02B0E845B00AF2534 /* InvitedCell.xib */; };
+		57A756C42B0E960300AF2534 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A756C32B0E960300AF2534 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		57A756BC2B0E6E9800AF2534 /* FriendInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendInfoCell.xib; sourceTree = "<group>"; };
 		57A756BF2B0E845B00AF2534 /* InvitedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedCell.swift; sourceTree = "<group>"; };
 		57A756C02B0E845B00AF2534 /* InvitedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvitedCell.xib; sourceTree = "<group>"; };
+		57A756C32B0E960300AF2534 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				57A756BC2B0E6E9800AF2534 /* FriendInfoCell.xib */,
 				57A756BF2B0E845B00AF2534 /* InvitedCell.swift */,
 				57A756C02B0E845B00AF2534 /* InvitedCell.xib */,
+				57A756C32B0E960300AF2534 /* APIManager.swift */,
 			);
 			path = KoKoFriend;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57A756C42B0E960300AF2534 /* APIManager.swift in Sources */,
 				57A756C12B0E845B00AF2534 /* InvitedCell.swift in Sources */,
 				57623D982B0A05B0002B7AFD /* ViewController.swift in Sources */,
 				57623DC92B0A8DF2002B7AFD /* FriendPageViewController.swift in Sources */,
