@@ -26,6 +26,8 @@
 		57623DD32B0E00D2002B7AFD /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57623DD12B0E00D1002B7AFD /* SearchCell.xib */; };
 		57A756BD2B0E6E9800AF2534 /* FriendInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A756BB2B0E6E9800AF2534 /* FriendInfoCell.swift */; };
 		57A756BE2B0E6E9800AF2534 /* FriendInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57A756BC2B0E6E9800AF2534 /* FriendInfoCell.xib */; };
+		57A756C12B0E845B00AF2534 /* InvitedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A756BF2B0E845B00AF2534 /* InvitedCell.swift */; };
+		57A756C22B0E845B00AF2534 /* InvitedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57A756C02B0E845B00AF2534 /* InvitedCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		57623DD12B0E00D1002B7AFD /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
 		57A756BB2B0E6E9800AF2534 /* FriendInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendInfoCell.swift; sourceTree = "<group>"; };
 		57A756BC2B0E6E9800AF2534 /* FriendInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendInfoCell.xib; sourceTree = "<group>"; };
+		57A756BF2B0E845B00AF2534 /* InvitedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedCell.swift; sourceTree = "<group>"; };
+		57A756C02B0E845B00AF2534 /* InvitedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvitedCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 				57623DD12B0E00D1002B7AFD /* SearchCell.xib */,
 				57A756BB2B0E6E9800AF2534 /* FriendInfoCell.swift */,
 				57A756BC2B0E6E9800AF2534 /* FriendInfoCell.xib */,
+				57A756BF2B0E845B00AF2534 /* InvitedCell.swift */,
+				57A756C02B0E845B00AF2534 /* InvitedCell.xib */,
 			);
 			path = KoKoFriend;
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 			files = (
 				57623DD32B0E00D2002B7AFD /* SearchCell.xib in Resources */,
 				57A756BE2B0E6E9800AF2534 /* FriendInfoCell.xib in Resources */,
+				57A756C22B0E845B00AF2534 /* InvitedCell.xib in Resources */,
 				57623DA02B0A05B1002B7AFD /* LaunchScreen.storyboard in Resources */,
 				57623D9D2B0A05B1002B7AFD /* Assets.xcassets in Resources */,
 				57623D9B2B0A05B0002B7AFD /* Main.storyboard in Resources */,
@@ -299,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57A756C12B0E845B00AF2534 /* InvitedCell.swift in Sources */,
 				57623D982B0A05B0002B7AFD /* ViewController.swift in Sources */,
 				57623DC92B0A8DF2002B7AFD /* FriendPageViewController.swift in Sources */,
 				57623DC72B0A07C4002B7AFD /* FriendListResponse.swift in Sources */,
