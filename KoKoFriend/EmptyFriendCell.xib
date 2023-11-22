@@ -12,7 +12,7 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="542" id="KGk-i7-Jjw" customClass="EmptyFriendCell" customModule="KoKoFriend" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="416" height="542"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="416" height="542"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -42,14 +42,15 @@
                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpl-2V-nMU">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpl-2V-nMU" customClass="GradientButton" customModule="KoKoFriend" customModuleProvider="target">
                         <rect key="frame" x="112" y="345" width="192" height="40"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="192" id="7n5-dP-Qxd"/>
                             <constraint firstAttribute="height" constant="40" id="Nlc-x8-dWq"/>
                         </constraints>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="加好友"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="加好友" image="icAddFriendWhite"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="幫助好友更快找到你？設定 KOKO ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msZ-6I-wRC">
                         <rect key="frame" x="100.66666666666669" y="422" width="215" height="18"/>
@@ -62,6 +63,7 @@
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="msZ-6I-wRC" secondAttribute="bottom" constant="57" id="3VS-6c-NXa"/>
                     <constraint firstItem="zWD-yA-gmI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="8Nv-hf-Tfd"/>
                     <constraint firstItem="sMs-to-Ma2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="65" id="8fE-PP-uCz"/>
                     <constraint firstItem="msZ-6I-wRC" firstAttribute="top" secondItem="qpl-2V-nMU" secondAttribute="bottom" constant="37" id="AGH-6c-ftY"/>
@@ -79,9 +81,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="addFriendBtn" destination="qpl-2V-nMU" id="BfN-pG-2vH"/>
+                <outlet property="addFriendBtn" destination="qpl-2V-nMU" id="Wiw-bm-ixY"/>
                 <outlet property="greetinfLabel" destination="MVQ-f0-Xsu" id="uWs-0u-qoG"/>
-                <outlet property="helpLabel" destination="msZ-6I-wRC" id="BCT-BZ-OgK"/>
+                <outlet property="helpLabel" destination="msZ-6I-wRC" id="MyQ-pa-Qa8"/>
                 <outlet property="infoLabel" destination="sMs-to-Ma2" id="MfM-Zd-ZFQ"/>
                 <outlet property="mainImg" destination="zWD-yA-gmI" id="Lbz-ob-J2q"/>
             </connections>
@@ -89,6 +91,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="icAddFriendWhite" width="24" height="24"/>
         <image name="imgFriendsEmpty" width="245" height="172"/>
     </resources>
 </document>
