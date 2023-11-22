@@ -9,6 +9,15 @@ import UIKit
 
 class EmptyFriendCell: UITableViewCell {
 
+    @IBOutlet weak var mainImg: UIImageView!
+    
+    @IBOutlet weak var greetinfLabel: UILabel!
+    
+    @IBOutlet weak var infoLabel: UILabel!
+    
+    @IBOutlet weak var addFriendBtn: UIButton!
+    
+    @IBOutlet weak var helpLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
