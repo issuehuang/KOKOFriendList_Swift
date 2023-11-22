@@ -19,6 +19,8 @@
 		57623DC52B0A0738002B7AFD /* UserDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57623DC42B0A0738002B7AFD /* UserDataResponse.swift */; };
 		57623DC72B0A07C4002B7AFD /* FriendListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57623DC62B0A07C4002B7AFD /* FriendListResponse.swift */; };
 		57623DC92B0A8DF2002B7AFD /* FriendPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57623DC82B0A8DF2002B7AFD /* FriendPageViewController.swift */; };
+		57623DCC2B0DCE54002B7AFD /* EmptyFriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57623DCA2B0DCE54002B7AFD /* EmptyFriendCell.swift */; };
+		57623DCD2B0DCE54002B7AFD /* EmptyFriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57623DCB2B0DCE54002B7AFD /* EmptyFriendCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		57623DC42B0A0738002B7AFD /* UserDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataResponse.swift; sourceTree = "<group>"; };
 		57623DC62B0A07C4002B7AFD /* FriendListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListResponse.swift; sourceTree = "<group>"; };
 		57623DC82B0A8DF2002B7AFD /* FriendPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPageViewController.swift; sourceTree = "<group>"; };
+		57623DCA2B0DCE54002B7AFD /* EmptyFriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyFriendCell.swift; sourceTree = "<group>"; };
+		57623DCB2B0DCE54002B7AFD /* EmptyFriendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyFriendCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				57623D9E2B0A05B1002B7AFD /* LaunchScreen.storyboard */,
 				57623DA12B0A05B1002B7AFD /* Info.plist */,
 				57623DC82B0A8DF2002B7AFD /* FriendPageViewController.swift */,
+				57623DCA2B0DCE54002B7AFD /* EmptyFriendCell.swift */,
+				57623DCB2B0DCE54002B7AFD /* EmptyFriendCell.xib */,
 			);
 			path = KoKoFriend;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 				57623DA02B0A05B1002B7AFD /* LaunchScreen.storyboard in Resources */,
 				57623D9D2B0A05B1002B7AFD /* Assets.xcassets in Resources */,
 				57623D9B2B0A05B0002B7AFD /* Main.storyboard in Resources */,
+				57623DCD2B0DCE54002B7AFD /* EmptyFriendCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +285,7 @@
 				57623D982B0A05B0002B7AFD /* ViewController.swift in Sources */,
 				57623DC92B0A8DF2002B7AFD /* FriendPageViewController.swift in Sources */,
 				57623DC72B0A07C4002B7AFD /* FriendListResponse.swift in Sources */,
+				57623DCC2B0DCE54002B7AFD /* EmptyFriendCell.swift in Sources */,
 				57623DC52B0A0738002B7AFD /* UserDataResponse.swift in Sources */,
 				57623D942B0A05B0002B7AFD /* AppDelegate.swift in Sources */,
 				57623D962B0A05B0002B7AFD /* SceneDelegate.swift in Sources */,
