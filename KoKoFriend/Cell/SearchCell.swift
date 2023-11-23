@@ -10,6 +10,7 @@ import UIKit
 class SearchCell: UITableViewCell {
 
     @IBOutlet weak var textfield: SearchTextField!
+    @IBOutlet weak var searchBtn: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         textfield.leftViewMode = .always
