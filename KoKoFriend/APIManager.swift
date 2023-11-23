@@ -10,6 +10,9 @@ class APIManager {
     static let shared = APIManager()
     let userInfoURL = "https://dimanyen.github.io/man.json"
     let friendListWithInvitedURL = "https://dimanyen.github.io/friend3.json"
+    let friendListOneURL = "https://dimanyen.github.io/friend1.json"
+    let friendListTwoURL = "https://dimanyen.github.io/friend2.json"
+    let friendListZero = "https://dimanyen.github.io/friend4.json"
     typealias Complate = (Data?, Error?) -> Void
 
     func getUserInfo(completion:@escaping(_ isSuccess:Bool,_ error:Error?,UserDataResponse?)->()){
@@ -31,8 +34,8 @@ class APIManager {
         }
     }
     
-    func getFriendListWithInvited(completion:@escaping(_ isSuccess:Bool,_ error:Error?,FriendListResponse?)->()){
-        requestWithHeader(urlString: friendListWithInvitedURL, parameters: [:]) { (data, error) in
+    func getFriendListWithInvited(urlString:String,completion:@escaping(_ isSuccess:Bool,_ error:Error?,FriendListResponse?)->()){
+        requestWithHeader(urlString: urlString, parameters: [:]) { (data, error) in
             guard let data = data else {
                 completion(false,error,nil)
                 return
