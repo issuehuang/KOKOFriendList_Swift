@@ -64,7 +64,7 @@
                                 <state key="normal" image="btnFriendsAgree"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
                             <constraint firstItem="XzG-xn-IDu" firstAttribute="leading" secondItem="A2S-4f-tXX" secondAttribute="leading" constant="15" id="CnT-tP-8Ya"/>
                             <constraint firstItem="buO-9s-R1O" firstAttribute="top" secondItem="A2S-4f-tXX" secondAttribute="top" constant="20" id="Kll-na-swj"/>
@@ -101,8 +101,8 @@
     <resources>
         <image name="btnFriendsAgree" width="30" height="30"/>
         <image name="btnFriendsDelet" width="30" height="30"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

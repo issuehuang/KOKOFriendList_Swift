@@ -29,6 +29,7 @@
 		57A756C12B0E845B00AF2534 /* InvitedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A756BF2B0E845B00AF2534 /* InvitedCell.swift */; };
 		57A756C22B0E845B00AF2534 /* InvitedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57A756C02B0E845B00AF2534 /* InvitedCell.xib */; };
 		57A756C42B0E960300AF2534 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A756C32B0E960300AF2534 /* APIManager.swift */; };
+		57A756C72B0F24EF00AF2534 /* FriendListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A756C62B0F24EF00AF2534 /* FriendListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		57A756BF2B0E845B00AF2534 /* InvitedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedCell.swift; sourceTree = "<group>"; };
 		57A756C02B0E845B00AF2534 /* InvitedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvitedCell.xib; sourceTree = "<group>"; };
 		57A756C32B0E960300AF2534 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		57A756C62B0F24EF00AF2534 /* FriendListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,25 +127,19 @@
 		57623D922B0A05B0002B7AFD /* KoKoFriend */ = {
 			isa = PBXGroup;
 			children = (
+				57A756C52B0F232800AF2534 /* Cell */,
 				57623DC32B0A06F8002B7AFD /* APIModel */,
+				57A756C32B0E960300AF2534 /* APIManager.swift */,
 				57623D932B0A05B0002B7AFD /* AppDelegate.swift */,
 				57623D952B0A05B0002B7AFD /* SceneDelegate.swift */,
 				57623D972B0A05B0002B7AFD /* ViewController.swift */,
+				57623DC82B0A8DF2002B7AFD /* FriendPageViewController.swift */,
+				57623DCE2B0DDD24002B7AFD /* CustomSegmentView.swift */,
+				57A756C62B0F24EF00AF2534 /* FriendListViewModel.swift */,
 				57623D992B0A05B0002B7AFD /* Main.storyboard */,
 				57623D9C2B0A05B1002B7AFD /* Assets.xcassets */,
 				57623D9E2B0A05B1002B7AFD /* LaunchScreen.storyboard */,
 				57623DA12B0A05B1002B7AFD /* Info.plist */,
-				57623DC82B0A8DF2002B7AFD /* FriendPageViewController.swift */,
-				57623DCA2B0DCE54002B7AFD /* EmptyFriendCell.swift */,
-				57623DCB2B0DCE54002B7AFD /* EmptyFriendCell.xib */,
-				57623DCE2B0DDD24002B7AFD /* CustomSegmentView.swift */,
-				57623DD02B0E00D1002B7AFD /* SearchCell.swift */,
-				57623DD12B0E00D1002B7AFD /* SearchCell.xib */,
-				57A756BB2B0E6E9800AF2534 /* FriendInfoCell.swift */,
-				57A756BC2B0E6E9800AF2534 /* FriendInfoCell.xib */,
-				57A756BF2B0E845B00AF2534 /* InvitedCell.swift */,
-				57A756C02B0E845B00AF2534 /* InvitedCell.xib */,
-				57A756C32B0E960300AF2534 /* APIManager.swift */,
 			);
 			path = KoKoFriend;
 			sourceTree = "<group>";
@@ -172,6 +168,21 @@
 				57623DC62B0A07C4002B7AFD /* FriendListResponse.swift */,
 			);
 			path = APIModel;
+			sourceTree = "<group>";
+		};
+		57A756C52B0F232800AF2534 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				57623DCA2B0DCE54002B7AFD /* EmptyFriendCell.swift */,
+				57623DCB2B0DCE54002B7AFD /* EmptyFriendCell.xib */,
+				57623DD02B0E00D1002B7AFD /* SearchCell.swift */,
+				57623DD12B0E00D1002B7AFD /* SearchCell.xib */,
+				57A756BB2B0E6E9800AF2534 /* FriendInfoCell.swift */,
+				57A756BC2B0E6E9800AF2534 /* FriendInfoCell.xib */,
+				57A756BF2B0E845B00AF2534 /* InvitedCell.swift */,
+				57A756C02B0E845B00AF2534 /* InvitedCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57A756C42B0E960300AF2534 /* APIManager.swift in Sources */,
+				57A756C72B0F24EF00AF2534 /* FriendListViewModel.swift in Sources */,
 				57A756C12B0E845B00AF2534 /* InvitedCell.swift in Sources */,
 				57623D982B0A05B0002B7AFD /* ViewController.swift in Sources */,
 				57623DC92B0A8DF2002B7AFD /* FriendPageViewController.swift in Sources */,

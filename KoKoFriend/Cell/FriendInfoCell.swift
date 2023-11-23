@@ -37,8 +37,9 @@ class FriendInfoCell: UITableViewCell {
 
     }
     
-    func setUpCellStatus(isTop:Bool,status:Int){
-        starBtn.isHidden = isTop ? false : true
+    func setUpCellStatus(isTop:String,status:Int){
+        
+        starBtn.isHidden = isTop == "0" ? false : true
         if status == 1 {
         moreBtn.layer.borderWidth = 0
           moreBtn.setImage(UIImage(named: "icFriendsMore"), for: .normal)

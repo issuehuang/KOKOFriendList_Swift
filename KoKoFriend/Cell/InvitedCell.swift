@@ -24,6 +24,13 @@ class InvitedCell: UITableViewCell {
         greetingLabel.textColor = .brownGrey
         greetingLabel.font =  UIFont(name: "PingFangTC-Regular", size: 13)
         greetingLabel.text = "邀請你成為好友：）"
+        self.selectionStyle = .none
+        bgView.backgroundColor = .white
+        bgView.layer.cornerRadius = 5
+        bgView.layer.shadowRadius = 10
+        bgView.layer.shadowOpacity = 1.0
+        bgView.layer.shadowOffset = CGSize(width: 3, height: 3)
+        bgView.layer.shadowColor = UIColor.black10.cgColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
