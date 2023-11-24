@@ -19,6 +19,7 @@ class SearchCell: UITableViewCell {
         textfield.backgroundColor = UIColor(red: 142/255, green: 142/255, blue: 142/255, alpha: 0.12)
         textfield.placeholder = "想轉一筆給誰呢？"
         textfield.layer.cornerRadius = 10
+        textfield.clearButtonMode = .whileEditing
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

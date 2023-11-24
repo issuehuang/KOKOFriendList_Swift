@@ -131,6 +131,7 @@ extension FriendPageViewController:UITableViewDelegate,UITableViewDataSource {
                 }else {
                     let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell", for: indexPath) as! SearchCell
                     cell.searchBtn.addTarget(self, action: #selector(tapSearchBtn), for: .touchUpInside)
+                    cell.textfield.delegate = self
                     return cell
                 }
             }else {
@@ -150,5 +151,11 @@ extension FriendPageViewController:UITableViewDelegate,UITableViewDataSource {
     @objc func tapSearchBtn(){
         let cell = tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? SearchCell
         viewModel.searchFriend(text:cell?.textfield.text ?? "")
+    }
+}
+extension FriendPageViewController:UITextFieldDelegate {
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        viewModel.cleanSearchTextField()
+        return true
     }
 }

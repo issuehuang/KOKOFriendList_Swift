@@ -22,6 +22,11 @@ final class FriendListViewModel {
     var user:[User]?
     var reloadViewClosure: (()->())?
     var fetchDataType:dataType?
+    var tempStoreList:[FriendList]?{
+        didSet{
+            self.reloadViewClosure?()
+        }
+    }
     init() {
         getUserInfo()
     }
@@ -39,7 +44,12 @@ final class FriendListViewModel {
     }
     
     func searchFriend(text:String) {
-       friendsList = friendsList?.filter({ $0.name == text })
+        tempStoreList = friendsList
+        friendsList = friendsList?.filter({ $0.name.localizedStandardContains(text)  })
+    }
+    
+    func cleanSearchTextField(){
+        friendsList = tempStoreList
     }
     
     func getZeroFriend(){
